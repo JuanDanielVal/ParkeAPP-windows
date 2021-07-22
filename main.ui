@@ -1,0 +1,1329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>458</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>641</width>
+      <height>461</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="page">
+     <property name="styleSheet">
+      <string notr="true">QWidget#page{
+background-image: url(&quot;fondo.png&quot;);
+}</string>
+     </property>
+     <widget class="QFrame" name="fmLogin">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>300</width>
+        <height>430</height>
+       </rect>
+      </property>
+      <property name="mouseTracking">
+       <bool>false</bool>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::DefaultContextMenu</enum>
+      </property>
+      <property name="acceptDrops">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame#fmLogin{
+	background-color: rgba(19, 28, 41, 100);
+border-radius: 10px;
+
+}</string>
+      </property>
+      <widget class="QPushButton" name="btnLogin">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>350</y>
+         <width>261</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+color: #fff;
+background-color: #132d42; 
+border-radius: 7px;
+font-family: Segoe UI, Helvetica, sans-serif;
+font-size: 15px;
+}
+
+
+QPushButton:hover{
+background-color: #265880; 
+}</string>
+       </property>
+       <property name="text">
+        <string>INICIAR SESIÓN</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtUser">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>210</y>
+         <width>281</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(0, 0, 0, 0);
+border: 1px solid rgba(0, 0, 0, 0);
+border-bottom-color: rgb(143, 143, 143);
+color: rgb(208, 208, 208);
+padding-bottom: 4px;
+padding-left: 3px</string>
+       </property>
+       <property name="frame">
+        <bool>true</bool>
+       </property>
+       <property name="placeholderText">
+        <string>Usuario</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtPass">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>270</y>
+         <width>281</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(0, 0, 0, 0);
+border: 1px solid rgba(0, 0, 0, 0);
+border-bottom-color: rgb(143, 143, 143);
+color: rgb(208, 208, 208);
+padding-bottom: 4px;
+padding-left: 3px</string>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+       <property name="placeholderText">
+        <string>Contraseña</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>30</y>
+         <width>301</width>
+         <height>151</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: transparent;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>login.png</normaloff>login.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>120</width>
+         <height>120</height>
+        </size>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_2">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>120</y>
+        <width>211</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame#frame_2{
+background-image: url(&quot;parkeapp.png&quot;);
+border: 0px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnSalir_2">
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>0</y>
+        <width>31</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>18</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+background-color: transparent;
+color: white;
+padding-bottom: 5px;
+border: 0px;
+}
+
+QPushButton:hover{
+	background-color: rgba(255, 0, 0, 120);
+color: white;
+}</string>
+      </property>
+      <property name="text">
+       <string>×</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <property name="styleSheet">
+      <string notr="true">QWidget#page_2{
+background-image: url(&quot;fond.png&quot;);
+}</string>
+     </property>
+     <widget class="QFrame" name="frame">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>221</width>
+        <height>431</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame#frame{
+	background-color: rgba(19, 28, 41, 100);
+	border-radius: 10px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QPushButton" name="btnIngreso">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>110</y>
+         <width>221</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	background-color: transparent;
+color: #fff;
+text-align: left;
+padding-left: 40px;
+font-family: Segoe UI, Helvetica, sans-serif;
+font-size: 15px;
+}
+
+QPushButton:hover{
+	background-color: rgba(38, 88, 128, 140);
+border: 0px;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>INGRESO</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>10</y>
+         <width>131</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: #fff;</string>
+       </property>
+       <property name="text">
+        <string>PARKE</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>10</y>
+         <width>131</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: #fff;</string>
+       </property>
+       <property name="text">
+        <string>APP</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnSalida">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>160</y>
+         <width>221</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	background-color: transparent;
+color: #fff;
+text-align: left;
+padding-left: 40px;
+font-family: Segoe UI, Helvetica, sans-serif;
+font-size: 15px;
+}
+
+QPushButton:hover{
+	background-color: rgba(38, 88, 128, 140);
+border: 0px;
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string>SALIDA</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnAyuda">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>260</y>
+         <width>221</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	background-color: transparent;
+color: #fff;
+text-align: left;
+padding-left: 40px;
+font-family: Segoe UI, Helvetica, sans-serif;
+font-size: 15px;
+}
+
+QPushButton:hover{
+	background-color: rgba(38, 88, 128, 140);
+border: 0px;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>AYUDA</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lbCapacidad">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>360</y>
+         <width>201</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: #fff;</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;CAPACIDAD: &lt;span style=&quot; font-weight:700;&quot;&gt;50&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblEnuso">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>380</y>
+         <width>201</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: #fff;</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;EN USO: &lt;span style=&quot; font-weight:700;&quot;&gt;0&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblDisponibles">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>400</y>
+         <width>201</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: #fff;</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;DISPONIBLES: &lt;span style=&quot; font-weight:700;&quot;&gt;50&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>51</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: transparent;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>carwhite.png</normaloff>carwhite.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>40</width>
+         <height>50</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnVerautos">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>210</y>
+         <width>221</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	background-color: transparent;
+color: #fff;
+text-align: left;
+padding-left: 40px;
+font-family: Segoe UI, Helvetica, sans-serif;
+font-size: 15px;
+}
+
+QPushButton:hover{
+	background-color: rgba(38, 88, 128, 140);
+border: 0px;
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string>VER AUTOS</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="btnSalir">
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>0</y>
+        <width>31</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>18</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+background-color: transparent;
+color: white;
+padding-bottom: 5px;
+border: 0px;
+}
+
+QPushButton:hover{
+	background-color: rgba(255, 0, 0, 120);
+color: white;
+}</string>
+      </property>
+      <property name="text">
+       <string>×</string>
+      </property>
+     </widget>
+     <widget class="QStackedWidget" name="stackedWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>20</y>
+        <width>361</width>
+        <height>431</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="page_9">
+       <property name="styleSheet">
+        <string notr="true">QWidget#page_9{
+	background-color: rgba(19, 28, 41, 100);
+	border-radius: 10px;
+}</string>
+       </property>
+       <widget class="QPushButton" name="btnAuto">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>100</y>
+          <width>121</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: #fff;
+background-color: #132d42; 
+border-radius: 7px;
+font-family: Segoe UI, Helvetica, sans-serif;
+font-size: 15px;
+}
+
+QPushButton:hover{
+background-color: #265880; 
+}</string>
+        </property>
+        <property name="text">
+         <string>AUTO</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnMoto">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>100</y>
+          <width>121</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: #fff;
+background-color: #132d42; 
+border-radius: 7px;
+font-family: Segoe UI, Helvetica, sans-serif;
+font-size: 15px;
+}
+
+QPushButton:hover{
+background-color: #265880; 
+}</string>
+        </property>
+        <property name="text">
+         <string>MOTO</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_6">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>20</y>
+          <width>361</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: #fff;
+font-family: Segoe UI, Helvetica, sans-serif;
+font-size: 24px;</string>
+        </property>
+        <property name="text">
+         <string>INGRESO</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QWidget" name="wInfo" native="true">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>160</y>
+          <width>321</width>
+          <height>251</height>
+         </rect>
+        </property>
+        <widget class="QLineEdit" name="txtPlaca">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>151</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>13</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(0, 0, 0, 0);
+border: 1px solid rgba(0, 0, 0, 0);
+border-bottom-color: rgb(143, 143, 143);
+color: rgb(208, 208, 208);
+padding-bottom: 4px;
+padding-left: 3px</string>
+         </property>
+         <property name="frame">
+          <bool>true</bool>
+         </property>
+         <property name="placeholderText">
+          <string>Placa</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtMarca">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>80</y>
+           <width>151</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>13</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(0, 0, 0, 0);
+border: 1px solid rgba(0, 0, 0, 0);
+border-bottom-color: rgb(143, 143, 143);
+color: rgb(208, 208, 208);
+padding-bottom: 4px;
+padding-left: 3px</string>
+         </property>
+         <property name="inputMethodHints">
+          <set>Qt::ImhNone</set>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="frame">
+          <bool>true</bool>
+         </property>
+         <property name="placeholderText">
+          <string>Marca</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtColor">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>140</y>
+           <width>151</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>13</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(0, 0, 0, 0);
+border: 1px solid rgba(0, 0, 0, 0);
+border-bottom-color: rgb(143, 143, 143);
+color: rgb(208, 208, 208);
+padding-bottom: 4px;
+padding-left: 3px</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="frame">
+          <bool>true</bool>
+         </property>
+         <property name="placeholderText">
+          <string>Color</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="cbTipo_2">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>200</y>
+           <width>151</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>13</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(0, 0, 0, 0);
+border: 1px solid rgba(0, 0, 0, 0);
+border-bottom-color: rgb(143, 143, 143);
+color: rgb(208, 208, 208);
+padding-bottom: 4px;
+padding-left: 3px</string>
+         </property>
+         <property name="placeholderText">
+          <string/>
+         </property>
+         <item>
+          <property name="text">
+           <string>Alto cilindraje</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Bajo Cilindraje</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QPushButton" name="btnCancelarI">
+         <property name="geometry">
+          <rect>
+           <x>200</x>
+           <y>130</y>
+           <width>111</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>-1</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+color: #fff;
+background-color: #132d42; 
+border-radius: 7px;
+font-family: Segoe UI, Helvetica, sans-serif;
+font-size: 15px;
+}
+
+QPushButton:hover{
+background-color: #265880; 
+}</string>
+         </property>
+         <property name="text">
+          <string>CANCELAR</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btnAceptarI">
+         <property name="geometry">
+          <rect>
+           <x>200</x>
+           <y>80</y>
+           <width>111</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>-1</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+color: #fff;
+background-color: #132d42; 
+border-radius: 7px;
+font-family: Segoe UI, Helvetica, sans-serif;
+font-size: 15px;
+}
+
+QPushButton:hover{
+background-color: #265880; 
+}</string>
+         </property>
+         <property name="text">
+          <string>ACEPTAR</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="cbTipo">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>200</y>
+           <width>151</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>13</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(0, 0, 0, 0);
+border: 1px solid rgba(0, 0, 0, 0);
+border-bottom-color: rgb(143, 143, 143);
+color: rgb(208, 208, 208);
+padding-bottom: 4px;
+padding-left: 3px</string>
+         </property>
+         <property name="placeholderText">
+          <string/>
+         </property>
+         <item>
+          <property name="text">
+           <string>Camioneta</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Deportivo</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Clásico</string>
+          </property>
+         </item>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_5">
+       <property name="styleSheet">
+        <string notr="true">QWidget#page_5{
+	background-color: rgba(19, 28, 41, 100);
+	border-radius: 10px;
+}</string>
+       </property>
+       <widget class="QLabel" name="label_7">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>20</y>
+          <width>361</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: #fff;
+font-family: Segoe UI, Helvetica, sans-serif;
+font-size: 24px;</string>
+        </property>
+        <property name="text">
+         <string>VER AUTOS</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="tvVerautos">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>341</width>
+          <height>331</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QTableView#tvVerautos{
+color: #fff;
+	background-color: rgba(124, 124, 124, 150);
+border-radius: 7px;
+font-family: Segoe UI, Helvetica, sans-serif;
+font-size: 10px;
+text-align: left;
+}
+
+QHeaderView::section{
+color: #fff;
+background-color: rgba(124, 124, 124, 150);
+border: 1px solid rgba(124, 124, 124, 150);
+border-right-color: #fff;
+
+}
+
+QTableWidget::item{
+background-color: transparent;
+border-color: white;
+}
+
+QTableWidget::item:hover{
+background-color: rgba(38, 88, 128, 100);
+}
+
+
+</string>
+        </property>
+        <property name="horizontalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+        <property name="columnCount">
+         <number>2</number>
+        </property>
+        <attribute name="horizontalHeaderMinimumSectionSize">
+         <number>39</number>
+        </attribute>
+        <attribute name="horizontalHeaderDefaultSectionSize">
+         <number>171</number>
+        </attribute>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="verticalHeaderCascadingSectionResizes">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="verticalHeaderDefaultSectionSize">
+         <number>28</number>
+        </attribute>
+        <column>
+         <property name="text">
+          <string>Vehiculo</string>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="textAlignment">
+          <set>AlignCenter</set>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Placa</string>
+         </property>
+         <property name="textAlignment">
+          <set>AlignCenter</set>
+         </property>
+        </column>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_10">
+       <property name="styleSheet">
+        <string notr="true">QWidget#page_10{
+	background-color: rgba(19, 28, 41, 100);
+	border-radius: 10px;
+}</string>
+       </property>
+       <widget class="QCheckBox" name="chbTarjeta">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>110</y>
+          <width>181</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>13</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(0, 0, 0, 0);
+border: 1px solid rgba(0, 0, 0, 0);
+border-bottom-color: rgb(143, 143, 143);
+color: rgb(208, 208, 208);
+padding-bottom: 4px;
+padding-left: 3px</string>
+        </property>
+        <property name="text">
+         <string>Tarjeta de propiedad</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_5">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>20</y>
+          <width>361</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: #fff;
+font-family: Segoe UI, Helvetica, sans-serif;
+font-size: 24px;</string>
+        </property>
+        <property name="text">
+         <string>SALIDA</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="txtPlaca_2">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>180</y>
+          <width>181</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>13</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(0, 0, 0, 0);
+border: 1px solid rgba(0, 0, 0, 0);
+border-bottom-color: rgb(143, 143, 143);
+color: rgb(208, 208, 208);
+padding-bottom: 4px;
+padding-left: 3px</string>
+        </property>
+        <property name="frame">
+         <bool>true</bool>
+        </property>
+        <property name="placeholderText">
+         <string>Placa</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="txtCosto">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>250</y>
+          <width>181</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>13</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(0, 0, 0, 0);
+border: 1px solid rgba(0, 0, 0, 0);
+border-bottom-color: rgb(143, 143, 143);
+color: rgb(208, 208, 208);
+padding-bottom: 4px;
+padding-left: 3px</string>
+        </property>
+        <property name="frame">
+         <bool>true</bool>
+        </property>
+        <property name="placeholderText">
+         <string>Costo</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnAceptarS">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>320</y>
+          <width>121</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: #fff;
+background-color: #132d42; 
+border-radius: 7px;
+font-family: Segoe UI, Helvetica, sans-serif;
+font-size: 15px;
+}
+
+QPushButton:hover{
+background-color: #265880; 
+}</string>
+        </property>
+        <property name="text">
+         <string>ACEPTAR</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_7">
+       <property name="styleSheet">
+        <string notr="true">QWidget#page_7{
+	background-color: rgba(19, 28, 41, 100);
+	border-radius: 10px;
+}</string>
+       </property>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>360</y>
+          <width>361</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: transparent;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>Logo_U.T.P..png</normaloff>Logo_U.T.P..png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>60</width>
+          <height>100</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_4">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>321</width>
+          <height>411</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: transparent;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>textAbout.fw.png</normaloff>textAbout.fw.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>300</width>
+          <height>300</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_8">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>20</y>
+          <width>361</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: #fff;
+font-family: Segoe UI, Helvetica, sans-serif;
+font-size: 24px;</string>
+        </property>
+        <property name="text">
+         <string>ACERCA DE</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
